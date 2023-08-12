@@ -18,36 +18,33 @@
  */
 int main(void)
 {
-	int c;
-	int d;
-	int e = 0;
-
-	while (e < 10)
+	int x , y , z =0;
+	while (z < 10)
 	{
-		d = 0;
-		while (d < 10)
+		y = 0;
+		while (y < 10)
 		{
-			c = 0;
-			while (c < 10)
+			x = 0;
+			while (x < 10)
 			{
-				if (c != d && d != e && e < d && d < c)
+				if (x != y && y != z && z < y && y < x)
 				{
-					putchar('0' + e);
-					putchar('0' + d);
-					putchar('0' + c);
+					putchar('0' + z);
+					putchar('0' + y);
+					putchar('0' + x);
 
-					if (c + d + e != 9 + 8 + 7)
+					if (x + y + z != 9 + 8 + 7)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
 
-				c++;
+				x++;
 			}
-			d++;
+			y++;
 		}
-		e++;
+		z++;
 	}
 	putchar('\n');
 	return (0);
