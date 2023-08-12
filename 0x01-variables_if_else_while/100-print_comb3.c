@@ -30,6 +30,11 @@ int main(void)
 				putchar('0' + y);
 				putchar('0' + x);
 			}
+			if (c + d != 8 + 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			y++;
 		}
 		c++;
