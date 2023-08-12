@@ -18,7 +18,8 @@
  */
 int main(void)
 {
-	int x , y , z =0;
+	int x , y , z ;
+	z = 0;
 	while (z < 10)
 	{
 		y = 0;
