@@ -3,7 +3,7 @@
 /**
  * _isalpha - check the code for ALX School students.
  *
- * @c: is c an integer argument
+ * @x: is c an integer argument
  *
  * Return: Always 0.
  */
