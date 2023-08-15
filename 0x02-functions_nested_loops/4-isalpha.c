@@ -8,14 +8,14 @@
  * Return: Always 0.
  */
 
-int _isalpha(int c)
+int _isalpha(int x)
 {
 
-	if (c >= 97 && c <= 122)
+	if (x >= 97 && x <= 122)
 	{
 		return (1);
 	}
-	else if (c >= 65 && c <= 90)
+	else if (x >= 65 && x <= 90)
 	{
 		return (1);
 	}
