@@ -2,7 +2,7 @@
 
 /**
  * factorial - factorial of n
- * @n: integer 
+ * @n: integer
  * Return: factorial of n
  */
 
