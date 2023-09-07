@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - multiplies two positive numbers.
  * @argc: n arguments.
