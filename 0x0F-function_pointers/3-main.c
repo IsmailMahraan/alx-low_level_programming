@@ -11,7 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*oprt)(int, int);
+	int a, b;
+	char *o;
 
 	if (argc != 4)
 	{
@@ -19,14 +20,24 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	oprt = get_op_func(argv[2]);
+	a = atoi(argv[1]);
+	o = argv[2];
+	b = atoi(argv[3]);
 
-	if (!oprt)
+	if (get_op_func(o) == NULL || o[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	if ((*o == '/' && b == 0) ||
+	    (*o == '%' && b == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", get_op_func(o)(a, b));
+
 	return (0);
 }
